@@ -40,6 +40,7 @@ function App() {
         <Heading>Heading text</Heading>
       </Oscar>
       <Status status='loading' />
+      <Greet name="Harmeet" messageCount={100} isLoggedIn={true} />
     </div>
   );
 }
