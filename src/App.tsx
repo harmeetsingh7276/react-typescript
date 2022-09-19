@@ -1,8 +1,11 @@
 
 import './App.css';
 import { Greet } from './component/Greet';
+import { Heading } from './component/Heading';
+import { Oscar } from './component/Oscar';
 import { Person } from './component/Person';
 import { PersonList } from './component/PersonList';
+import { Status } from './component/Status';
 
 function App() {
   const personName = {
@@ -29,11 +32,16 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet name="Harmeet" messageCount={100} isLoggedIn={true} />
+      {/* <Greet name="Harmeet" messageCount={100} isLoggedIn={true} />
       <Person name={personName} />
-      <PersonList names={nameList}/>
+      <PersonList names={nameList}/> */}
+      {/* <Heading>Heading text</Heading> */}
+      <Oscar>
+        <Heading>Heading text</Heading>
+      </Oscar>
+      <Status status='loading' />
     </div>
   );
-  }
+}
 
 export default App;
