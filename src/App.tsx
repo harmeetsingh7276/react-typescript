@@ -33,8 +33,8 @@ function App() {
   ]
   return (
     <div className="App">
-      <Button handleClick={()=>{
-        console.log("Button Clicked")
+      <Button handleClick={(e,id)=>{
+        console.log("Button Clicked",e,id)
       }} />
     </div>
   );
