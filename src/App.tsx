@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Button } from './component/Button';
 import { Greet } from './component/Greet';
 import { Heading } from './component/Heading';
 import { Oscar } from './component/Oscar';
@@ -32,15 +33,9 @@ function App() {
   ]
   return (
     <div className="App">
-      {/* <Greet name="Harmeet" messageCount={100} isLoggedIn={true} />
-      <Person name={personName} />
-      <PersonList names={nameList}/> */}
-      {/* <Heading>Heading text</Heading> */}
-      <Oscar>
-        <Heading>Heading text</Heading>
-      </Oscar>
-      <Status status='loading' />
-      <Greet name="Harmeet" messageCount={100} isLoggedIn={true} />
+      <Button handleClick={()=>{
+        console.log("Button Clicked")
+      }} />
     </div>
   );
 }
