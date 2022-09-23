@@ -9,6 +9,7 @@ import { Oscar } from './component/Oscar';
 import { Person } from './component/Person';
 import { PersonList } from './component/PersonList';
 import { LoggedIn } from './component/state/LoggedIn';
+import { User } from './component/state/User';
 import { Status } from './component/Status';
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
       }} /> */}
       {/* <Input value='Harmeet' handleChange={(event)=>console.log(event)} /> */}
       {/* <Container styles={{border:'10px solid black'}} /> */}
-      <LoggedIn/>
+      {/* <LoggedIn/> */}
+      <User/>
     </div>
   );
 }
