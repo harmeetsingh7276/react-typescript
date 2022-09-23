@@ -1,6 +1,7 @@
 
 import './App.css';
 import { Button } from './component/Button';
+import { Container } from './component/Container';
 import { Greet } from './component/Greet';
 import { Heading } from './component/Heading';
 import { Input } from './component/Input';
@@ -37,7 +38,8 @@ function App() {
       {/* <Button handleClick={(e,id)=>{
         console.log("Button Clicked",e,id)
       }} /> */}
-      <Input value='Harmeet' handleChange={(event)=>console.log(event)} />
+      {/* <Input value='Harmeet' handleChange={(event)=>console.log(event)} /> */}
+      <Container styles={{border:'10px solid black'}} />
     </div>
   );
 }
