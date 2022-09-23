@@ -8,6 +8,7 @@ import { Input } from './component/Input';
 import { Oscar } from './component/Oscar';
 import { Person } from './component/Person';
 import { PersonList } from './component/PersonList';
+import { LoggedIn } from './component/state/LoggedIn';
 import { Status } from './component/Status';
 
 function App() {
@@ -39,7 +40,8 @@ function App() {
         console.log("Button Clicked",e,id)
       }} /> */}
       {/* <Input value='Harmeet' handleChange={(event)=>console.log(event)} /> */}
-      <Container styles={{border:'10px solid black'}} />
+      {/* <Container styles={{border:'10px solid black'}} /> */}
+      <LoggedIn/>
     </div>
   );
 }
